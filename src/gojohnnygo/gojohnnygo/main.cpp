@@ -443,8 +443,8 @@ void printHelp()
 string convertToSpeechURL(string input)
 {
 	string networkURL = "\"http://translate.google.com/translate_tts?ie=UTF-8&q=";
-	networkURL.append(UriEncode(input));
-	networkURL.append("&tl=en&prev=input.mpeg\"");
+	networkURL.append(input);
+	networkURL.append("&client=tw-ob&tl=en&prev=input.mpeg\"");
 	return networkURL;
 }
 
